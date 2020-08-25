@@ -1,0 +1,39 @@
+$back-prim: #34648e;
+$back-sec: #57396f;
+$purple: #57396f;
+$blue-light: #429be9;
+
+$font-big: "Lato", sans-serif;
+
+$font-small: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+$text-color: rgba(207, 218, 248, 0.9);
+
+@mixin flexCollumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin invFlexCollumn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin invFlexRow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}

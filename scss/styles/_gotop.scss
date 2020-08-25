@@ -1,0 +1,23 @@
+.go-top {
+  &-container {
+    position: fixed;
+    padding: 0.8rem 0.5rem;
+    background-color: #ffffff;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 10%;
+    box-shadow: -7px 23px 55px -26px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    color: black;
+  }
+  &-container-arrow {
+    font-size: 1.1rem;
+  }
+}
+
+.go-top-container:hover {
+  color: white !important;
+  background-color: black;
+  transition: 0.7s all;
+  transform: translateY(-0.4rem);
+}

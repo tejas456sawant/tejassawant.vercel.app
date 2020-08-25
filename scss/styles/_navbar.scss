@@ -1,0 +1,131 @@
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(52, 100, 142, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  animation: iniOpacity 1.7s;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  font-family: $font-big;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  margin-left: 1rem;
+}
+
+.nav-title-link:hover {
+  color: rgba(255, 255, 255, 0.808);
+  transition: 0.4s all;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  font-family: $font-small;
+  margin-right: 1.1rem;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 15px 13px 15px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(14, 13, 13, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(52, 100, 142, 0.5);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.288);
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+@keyframes iniOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav:hover {
+  background-color: $back-prim;
+  transition: 0.2s all;
+}

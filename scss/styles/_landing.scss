@@ -1,0 +1,46 @@
+.landing {
+  .particles {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient($back-prim, $back-sec);
+  }
+  &-main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include flexCollumn;
+    color: #ffffff;
+    text-align: center;
+    &-subtitle {
+      margin-top: 0.8rem;
+      font-size: 2.2rem;
+    }
+    &-subtext {
+      margin-top: -0.8rem;
+    }
+    &-button {
+      margin-top: 1.3rem;
+    }
+    &-button:hover {
+      transition: 0.5s all;
+      margin-bottom: -0.2rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .landing-main-title {
+    font-size: 3.5rem;
+  }
+  .landing-main-subtitle {
+    font-size: 1.5rem;
+  }
+  .landing-main-subtext {
+    font-size: 0.9rem;
+  }
+  .landing-main-button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,79 @@
+.about {
+  background: $back-sec;
+  &-content {
+    &-title {
+      position: relative;
+    }
+    &-title::after {
+      content: "";
+      position: absolute;
+      top: 74%;
+      left: 28.5%;
+      padding: 1.5px 0;
+      width: 40%;
+      background-color: #4383bb;
+    }
+
+    &-container {
+      padding: 1.5rem;
+      margin-top: 4rem;
+      @include flexRow;
+      .about-main-text {
+        padding-right: 9rem;
+        text-align: left;
+        color: $text-color;
+        &-desc {
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid $blue-light;
+        }
+        &-desc:hover {
+          transition: 1s all;
+          font-size: 1.07rem;
+          color: white;
+        }
+      }
+      .about-img-container {
+        padding-top: 1.7rem;
+        width: 110%;
+        &-img {
+          border-radius: 3%;
+        }
+      }
+      .about-img-container:hover {
+        width: 115%;
+        transition: 1s all;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .about-content-container {
+    @include flexCollumn;
+    width: 90%;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    .about-main-text {
+      padding-right: 0;
+      width: 80%;
+      text-align: left;
+      &-desc {
+        font-size: 0.8rem;
+      }
+      &-desc:hover {
+        animation: changeFont 1s !important;
+        transition: 1s all !important;
+        font-size: 1rem !important;
+        color: white !important;
+      }
+    }
+    .about-img-container {
+      width: 80% !important;
+    }
+    .about-img-container:hover {
+      width: 87% !important;
+      transition: 1s all !important;
+    }
+  }
+}
