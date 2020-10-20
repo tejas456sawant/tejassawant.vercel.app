@@ -22,7 +22,7 @@ const Projects = () => {
           <p className='description'>Hover over a project to see more.</p>
         </Fade>
         <ProjectCard
-          imgUrl='url(/media/imgs/FullBankDetails.png)'
+          imgUrl='url(/media/imgs/FullBankDetails.PNG)'
           projectTitle='FullBankDetails'
           projectShortInfo='Website for searching bank details.'
           projectInfo={`Created using NextJS. Website created for searching bank details.
