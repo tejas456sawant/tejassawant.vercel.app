@@ -1,5 +1,3 @@
-/** @format */
-
 import React from "react";
 import { MdWeb } from "react-icons/md";
 import { GoServer } from "react-icons/go";

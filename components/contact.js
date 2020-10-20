@@ -1,3 +1,5 @@
+/** @format */
+
 import Fade from "react-reveal/Fade";
 import emailjs from "emailjs-com";
 import { useState } from "react";
@@ -21,7 +23,7 @@ const Contact = () => {
         "default_service",
         "template_oizoppgr",
         templateParams,
-        "user_ZomptYOtyMQzoIJAwT4Bv"
+        "user_ZomptYOtyMQzoIJAwT4Bv",
       )
       .then(
         (result) => {
@@ -29,15 +31,15 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
 
   return (
-    <section className="contact section" id="contact">
-      <div className="contact-content content">
+    <section className='contact section' id='contact'>
+      <div className='contact-content content'>
         <Fade>
-          <h1 className="contact-content-title subtitle">
+          <h1 className='contact-content-title subtitle'>
             <ReactTyped
               loop
               typeSpeed={70}
@@ -46,24 +48,24 @@ const Contact = () => {
               backDelay={1000}
               loopCount={0}
               showCursor
-              cursorChar="|"
+              cursorChar='_'
             />
           </h1>
-          <p className="contact-content-description description">
+          <p className='contact-content-description description'>
             Be it for work, or anything else, email me, I'll respond ASAP
           </p>
         </Fade>
 
-        <form className="form" onSubmit={sendEmail}>
+        <form className='form' onSubmit={sendEmail}>
           <Fade>
-            <div className="form-div">
-              <label className="form-div-label filler">
+            <div className='form-div'>
+              <label className='form-div-label filler'>
                 First and Last name:
               </label>
               <input
-                className="form-div-input"
-                type="text"
-                name="user_name"
+                className='form-div-input'
+                type='text'
+                name='user_name'
                 required
                 onChange={(e) => {
                   setName(e.target.value);
@@ -72,12 +74,12 @@ const Contact = () => {
             </div>
           </Fade>
           <Fade>
-            <div className="form-div">
-              <label className="form-div-label filler">Your Email:</label>
+            <div className='form-div'>
+              <label className='form-div-label filler'>Your Email:</label>
               <input
-                className="form-div-input"
-                type="email"
-                name="user_email"
+                className='form-div-input'
+                type='email'
+                name='user_email'
                 required
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -86,13 +88,13 @@ const Contact = () => {
             </div>
           </Fade>
           <Fade>
-            <div className="form-div">
-              <label className="form-div-label filler">
+            <div className='form-div'>
+              <label className='form-div-label filler'>
                 Send me a Message:
               </label>
               <textarea
-                className="form-div-input form-div-textarea"
-                name="message"
+                className='form-div-input form-div-textarea'
+                name='message'
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
@@ -100,8 +102,8 @@ const Contact = () => {
             </div>
           </Fade>
           <Fade>
-            <div className="form-div">
-              <button className="form-div-btn " type="submit">
+            <div className='form-div'>
+              <button className='form-div-btn ' type='submit'>
                 <FaPaperPlane />
                 &nbsp;&nbsp;Send
               </button>

@@ -14,12 +14,12 @@ const ROLES = [
 
 const Landing = () => {
   return (
-    <div id="landing" className="landing section">
-      <Particles className="particles" params={particlesConfig} />
-      <div className="landing-main">
+    <div id='landing' className='landing section'>
+      <Particles className='particles' params={particlesConfig} />
+      <div className='landing-main'>
         <Zoom>
-          <h1 className="landing-main-title title">Tejas Sawant</h1>
-          <h3 className="landing-main-subtitle subtitle">
+          <h1 className='landing-main-title title'>Tejas Sawant</h1>
+          <h3 className='landing-main-subtitle subtitle'>
             <Typed
               loop
               typeSpeed={70}
@@ -28,11 +28,11 @@ const Landing = () => {
               backDelay={1000}
               loopCount={0}
               showCursor
-              cursorChar="|"
+              cursorChar='_'
             />
           </h3>
-          <p className="landing-main-subtext filler"></p>
-          <a className="landing-main-button btn-light" href="#projects">
+          <p className='landing-main-subtext filler'></p>
+          <a className='landing-main-button btn-light' href='#projects'>
             See projects
           </a>
         </Zoom>

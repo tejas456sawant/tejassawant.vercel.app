@@ -9,7 +9,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
     "emailjs-com": "^2.4.1",
     "next": "9.3.2",
     "next-ga": "^2.3.4",

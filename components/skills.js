@@ -1,5 +1,3 @@
-/** @format */
-
 import Fade from "react-reveal/Fade";
 import Typed from "react-typed";
 import SkillCards from "./SkillCards";
@@ -18,7 +16,7 @@ const Skills = () => {
               backDelay={1000}
               loopCount={0}
               showCursor
-              cursorChar='|'
+              cursorChar='_'
             />
           </h1>
           <p className='skills-content-description description'>
