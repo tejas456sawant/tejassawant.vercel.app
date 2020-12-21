@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "emailjs-com": "^2.4.1",
+    "emailjs-com": "^2.6.4",
     "next": "^9.5.5",
     "next-ga": "^2.3.4",
     "react": "^16.14.0",

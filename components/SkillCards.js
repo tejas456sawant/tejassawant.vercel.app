@@ -18,9 +18,10 @@ const SkillCards = () => (
         <li className='skills-box-list-skill filler'>
           JavaScript | TypeScript
         </li>
-        <li className='skills-box-list-skill filler'>React | Redux | MERN</li>
-        <li className='skills-box-list-skill filler'>NextJs</li>
-        <li className='skills-box-list-skill filler'>GatsbyJs</li>
+        <li className='skills-box-list-skill filler'>
+          React | NextJs | GatsbyJs | Redux | MERN
+        </li>
+        <li className='skills-box-list-skill filler'>Vue.js | NuxtJs</li>
         <li className='skills-box-list-skill filler'>AngularJs | MEAN</li>
         <li className='skills-box-list-skill filler skills-box-list-skill-last'>
           HTML | CSS3 | SASS
