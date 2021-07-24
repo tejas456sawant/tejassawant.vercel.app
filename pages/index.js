@@ -21,7 +21,7 @@ const Home = () => (
     <Landing />
     <About />
     <Skills />
-    <Projects />
+    {/* <Projects /> */}
     <Contact />
     <GoTop />
   </Layout>
